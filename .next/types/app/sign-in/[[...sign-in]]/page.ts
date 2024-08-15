@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // File: C:\Users\user\OneDrive\Desktop\FlashcardSaas\Flashcard\app\sign-in\[[...sign-in]]\page.js
+=======
+// File: /Users/safalta/Desktop/Flashcard system/app/sign-in/[[...sign-in]]/page.js
+>>>>>>> 2cf2f5178f38df817f9845a477b2717ece7a1228
 import * as entry from '../../../../../app/sign-in/[[...sign-in]]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
