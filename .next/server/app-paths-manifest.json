@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
   "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/generate/page": "app/generate/page.js",
   "/api/generate/page": "app/api/generate/page.js"
+=======
+  "/generate/page": "app/generate/page.js"
+>>>>>>> 90739e2beab51be73f3513dce081ebbe55f60c72
 }

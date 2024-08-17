@@ -1,15 +1,16 @@
 {
   "pages": {
-    "/page": [
+    "/generate/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/generate/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+<<<<<<< HEAD
     ],
     "/generate/page": [
       "static/chunks/webpack.js",
@@ -25,6 +26,8 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/_not-found/page.js"
+=======
+>>>>>>> 90739e2beab51be73f3513dce081ebbe55f60c72
     ]
   }
 }
