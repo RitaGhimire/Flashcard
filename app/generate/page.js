@@ -1,6 +1,6 @@
 'use client';
 import { useUser } from '@clerk/nextjs';
-import { Container, Box, Typography, Paper, TextField, Button, CardActionArea } from '@mui/material';
+import { Container, Box, Typography, Paper, TextField, Button, CardActionArea, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions } from '@mui/material';
 import { writeBatch, collection, doc, getDoc } from 'firebase/firestore';
 import { useRouter } from 'next/navigation'; // Switch to `next/navigation` for useRouter in App directory
 import { useState, useEffect } from 'react';
@@ -30,7 +30,7 @@ export default function Generate() {
             body: text,
         })
         .then((res) => res.json())
-        .then((data) => setFlashcards(data))
+        .then(data > setFlashcards(data))
         .catch((error) => console.error('Error generating flashcards:', error));
     };
 
@@ -130,7 +130,24 @@ export default function Generate() {
                                             transform: flipped[index]
                                                 ? 'rotateY(180deg)'
                                                 : 'rotateY(0deg)',
-                                        }
+                                        },
+                                        '& > div > div': {  
+                                            position: 'absolute',
+                                            width: '100%',
+                                            height: '100%',
+                                            boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+                                           backfaceVisibility: 'hidden',
+                                           display: flex,
+                                           justifyContent:center,
+                                           alignItems: center,
+                                           padding: 2,
+                                           boxSizing: 'border-box'
+                                        },
+                                        '& > div > div: nth-of-type(2)':{
+                                            transform: 'rotateY(180deg)',
+
+                                        },
+                                        
                                     }}>
                                         <div>
                                             <div>
@@ -146,7 +163,35 @@ export default function Generate() {
                             </Grid>
                         ))}
                 </Grid>
-            </Box>)}
+                <Box sx = {{mt:4, display: 'flex' ,justifyContent: 'center'}}>
+                    <Button variant='contained' color = 'secondary' onClick={handleOpen}>
+                       Save 
+                    </Button>
+                </Box>
+            </Box>
+        )}
+
+        <Dialog open = {open} onClose={handleClose}>
+            <DialogTitle>Save Flashcards</DialogTitle>
+            <DialogContent>
+                <DialogContentText>
+                   Please enter your flashcard collections
+                </DialogContentText>
+                <TextField
+                    autoFocus margin='dense'
+                     label = 'Collection Name' 
+                     type = 'text'
+                      fullWidth value = {name} 
+                      onChange={(e) => setName(e.target.value)}
+                      variant = 'outlined'
+                      ></TextField>
+            </DialogContent>
+            <DialogActions>
+                <Button onClick={handleClose}>Cancel</Button>
+                <Button onClick={saveFlashcards}>Save</Button>
+               
+            </DialogActions>
+        </Dialog>
 
         </Container>
     );

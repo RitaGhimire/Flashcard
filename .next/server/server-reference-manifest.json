@@ -2,30 +2,21 @@
   "node": {
     "30f9a4a61804daea913451f6ac990a4ca74ccab9": {
       "workers": {
-<<<<<<< HEAD
         "app/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
+        "app/sign-up/[[...sign-up]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
         "app/generate/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/api/generate/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!",
-        "app/_not-found/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
+        "app/api/generate/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsafalta%2FDesktop%2FFlashcard%20system%2Fnode_modules%2F%40clerk%2Fnextjs%2Fdist%2Fesm%2Fapp-router%2Fserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
         "app/page": "action-browser",
+        "app/sign-in/[[...sign-in]]/page": "action-browser",
+        "app/sign-up/[[...sign-up]]/page": "action-browser",
         "app/generate/page": "action-browser",
-        "app/api/generate/page": "action-browser",
-        "app/_not-found/page": "action-browser"
-=======
-        "app/generate/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Csdaha%5C%5COneDrive%5C%5CDesktop%5C%5CStripeAI%5C%5CFlashcard%5C%5Cnode_modules%5C%5C%40clerk%5C%5Cnextjs%5C%5Cdist%5C%5Cesm%5C%5Capp-router%5C%5Cserver-actions.js%22%2C%5B%22invalidateCacheAction%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/generate/page": "action-browser"
->>>>>>> 90739e2beab51be73f3513dce081ebbe55f60c72
+        "app/api/generate/page": "action-browser"
       }
     }
   },
   "edge": {},
-<<<<<<< HEAD
-  "encryptionKey": "yUJvvZVPs+l9kqtZJY3jIzktOfrMnZb/PMZnS3f6eb0="
-=======
-  "encryptionKey": "58hr6kA5ia+tswA9reiOTdyHyWtfL4OwuzDs5YmsJog="
->>>>>>> 90739e2beab51be73f3513dce081ebbe55f60c72
+  "encryptionKey": "VqxBZc0Q3Zdul5x31GZZ/5PQa8YCOyaeinyvwZ2vYdY="
 }
