@@ -1,5 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/generate/page": "app/generate/page.js",
-  "/api/generate/route": "app/api/generate/route.js"
+  "/generate/page": "app/generate/page.js"
 }

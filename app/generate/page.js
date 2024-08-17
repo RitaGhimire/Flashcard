@@ -1,6 +1,6 @@
 'use client';
 import { useUser } from '@clerk/nextjs';
-import { Container, Box, Typography, Paper, TextField, Button } from '@mui/material';
+import { Container, Box, Typography, Paper, TextField, Button, CardActionArea } from '@mui/material';
 import { writeBatch, collection, doc, getDoc } from 'firebase/firestore';
 import { useRouter } from 'next/navigation'; // Switch to `next/navigation` for useRouter in App directory
 import { useState, useEffect } from 'react';
@@ -94,11 +94,60 @@ export default function Generate() {
                         variant="outlined"
                         sx={{ mb: 2 }}
                     />
-                    <Button variant="contained" color="primary" onClick={handleSubmit}>
-                        Generate Flashcards
+                    <Button 
+                        variant="contained" 
+                        color="primary" 
+                        onClick={handleSubmit}
+                        fullWidth
+                    >
+                        {''}
+                        Submit
                     </Button>
                 </Paper>
             </Box>
+
+            {flashcards.length > 0 && (
+                <Box sx={{ mt: 4}}>
+                <Typography variant="h5">Flashcards Preview</Typography>
+                <Grid container spacing={3}>
+                    {flashcards.map((flashcard, index) => (
+                        <Grid item xs={12} sm={6} md={4} key={index}>
+                            <Card>
+                            <CardActionArea 
+                                onClick={() => {
+                                handleCardClick(index)      
+                            }}>
+                                <CardContent>
+                                    <Box sx={{
+                                        persepective: '1000px',
+                                        '& > div': {
+                                            transition: 'transform 0.6s',
+                                            transformStyle: 'preserve-3d',
+                                            position: 'relative',
+                                            width: '100%',
+                                            height: '200px',
+                                            boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+                                            transform: flipped[index]
+                                                ? 'rotateY(180deg)'
+                                                : 'rotateY(0deg)',
+                                        }
+                                    }}>
+                                        <div>
+                                            <div>
+                                                 <Typography variant="h5" component="div">{flashcard.front}</Typography>
+                                                 <Typography variant="h5" component="div">{flashcard.back}</Typography>
+ 
+                                            </div>
+                                        </div>
+                                    </Box>
+                                </CardContent>
+                            </CardActionArea>
+                            </Card>
+                            </Grid>
+                        ))}
+                </Grid>
+            </Box>)}
+
         </Container>
     );
 }

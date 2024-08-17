@@ -12,6 +12,8 @@ const systemPrompt = `You are an AI flashcard creator. Your task is to generate 
 8. Tailor the difficulty level of the flashcards to the user's specified preferences.
 9. Try to give a bit of context, or at the most important and relevant information for the flashcards.
 10. Aim to create a balanced set of flashcards that covers the topic comprehensively.
+11. Only generate 10 flashcards.
+
 Remember the goal is to facilitate effective learning and retention of information through this flashcards.
 Return in the following json format.
 {
